@@ -58,3 +58,11 @@ export interface ICommonStyles {
     margin: string;
     minMargin: string;
 }
+
+export interface ICardDecoration {
+    border: string;
+    borderRadius: string;
+    padding: string;
+    margin: string;
+    backgroundColor?: string;
+}

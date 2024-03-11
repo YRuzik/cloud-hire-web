@@ -1,19 +1,36 @@
-import {FC, ReactNode, useMemo} from "react";
-import {themeGetter} from "../styles/common.ts";
+import {createContext, FC, ReactNode, useMemo, useState} from "react";
 import {ThemeProvider} from "styled-components";
-import useThemeMode from "../hooks/useThemeMode.ts";
+import {Light} from "../styles/themes/light.ts";
+import {IStyles} from "../interfaces/IStyles.ts";
 
 type ThemeContextProps = {
     children: ReactNode
 }
 
+type ThemeContextDataType = {
+    setTheme: (v: IStyles) => void
+}
+
+const themeCtxInitialData: ThemeContextDataType = {
+    setTheme: () => {
+    }
+}
+
+export const ThemeContextData = createContext(themeCtxInitialData)
+
 const ThemeContext: FC<ThemeContextProps> = ({children}) => {
-    const { theme } = useThemeMode();
-    const themeMode = useMemo(() => themeGetter(theme), [theme])
+    const [theme, setTheme] = useState(Light)
+
+    const memoized = useMemo((): ThemeContextDataType => ({
+        setTheme
+    }), [])
+
     return (
-        <ThemeProvider theme={themeMode}>
-            {children}
-        </ThemeProvider>
+        <ThemeContextData.Provider value={memoized}>
+            <ThemeProvider theme={theme}>
+                {children}
+            </ThemeProvider>
+        </ThemeContextData.Provider>
     )
 }
 

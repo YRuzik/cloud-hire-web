@@ -1,14 +1,16 @@
 import './App.css'
 import ThemeContext from "./contexts/ThemeContext.tsx";
-import CloudHireCard from "./components/uiKit/cloudHireCard/CloudHireCard.tsx";
+import {GlobalStyles} from "./styles/globalStyles.ts";
+import TestComponent from "./components/uiKit/testComponent/TestComponent.tsx";
 
 function App() {
 
 
   return (
-    <ThemeContext>
-        <CloudHireCard></CloudHireCard>
-    </ThemeContext>
+      <ThemeContext>
+          <GlobalStyles/>
+          <TestComponent/>
+      </ThemeContext>
   )
 }
 

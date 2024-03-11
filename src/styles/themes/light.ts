@@ -6,7 +6,7 @@ export const BaseColors: IBaseColors = {
     blue: "#D2E7FF",
     gray: "#2E2E2E",
     green: "#D0E8D4",
-    lightGray: "#EDEDED",
+    lightGray: "#747473",
     orange: "#FFCE9E",
     purple: "#EED0FF",
     red: "#FEBED0",
