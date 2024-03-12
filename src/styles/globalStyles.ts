@@ -119,6 +119,7 @@ export const GlobalStyles = createGlobalStyle`
         background-color: ${props => props.theme.backgroundColor};
         color: ${props => props.theme.textColor};
         font-family: "Argentum", sans-serif;
+        width: 100%;
         font-weight: 500;
         font-size: 1rem;
         height: 100%;

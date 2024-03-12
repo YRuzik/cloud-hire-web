@@ -60,9 +60,15 @@ export interface ICommonStyles {
 }
 
 export interface ICardDecoration {
-    border: string;
-    borderRadius: string;
-    padding: string;
-    margin: string;
+    border?: IBorderDecoration;
+    borderRadius?: string;
+    padding?: string;
+    margin?: string;
     backgroundColor?: string;
+}
+
+export interface IBorderDecoration {
+    color?: string;
+    style?: string;
+    size?: string;
 }

@@ -16,7 +16,7 @@ export const BaseColors: IBaseColors = {
 
 export const CommonStyles: ICommonStyles = {
     defaultPadding: "10px",
-    defaultRadius: "15px",
+    defaultRadius: "7px",
     margin: "20px",
     maxRadius: "50px",
     minMargin: "15px",
@@ -31,7 +31,7 @@ export const Light: IStyles = {
     brandColor: BaseColors.black,
     brandedTextColor: BaseColors.darkBlack,
     cardColor: BaseColors.gray,
-    cardSecondaryColor: BaseColors.lightGray,
+    cardSecondaryColor: BaseColors.white,
     dangerColor: BaseColors.red,
     invertedBorderColor: BaseColors.lightGray,
     invertedTextColor: BaseColors.white,
