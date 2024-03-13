@@ -22,8 +22,8 @@ export const BaseDimensions: IDimensions = {
     maxBorderRadius: "50px",
     minBorderRadius: "5px",
     minMargin: "2px",
-    minPadding: "2px",
-    padding: "10px"
+    minPadding: "5px",
+    padding: "15px"
 }
 
 export const Light: DefaultTheme = {

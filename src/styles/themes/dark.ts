@@ -20,11 +20,11 @@ export const Dark: DefaultTheme = {
     },
     themeColors: {
         backgroundColor: "#1D1D1B",
-        borderColor: "#515151",
+        borderColor: "#D3D3D3",
         brandColor: "#FFFFFF",
         onBrandColor: "#1D1D1B",
         dangerColor: "#FEBED0",
-        invertedBorderColor: "#D3D3D3",
+        invertedBorderColor: "#515151",
         secondaryBackgroundColor: "#FAFAFA",
         successColor: "#D0E8D4",
         waitingColor: "#FFCE9E"

@@ -3,6 +3,7 @@ import {GlobalStyles} from "./styles/globalStyles.ts";
 import TestComponent from "./components/uiKit/testComponent/TestComponent.tsx";
 import Header from "./components/header/Header.tsx";
 import ThemeToggler from "./components/uiKit/themeToggler/ThemeToggler.tsx";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
 
@@ -10,9 +11,11 @@ function App() {
   return (
       <ThemeContext>
           <GlobalStyles/>
-          <ThemeToggler/>
-          <Header/>
-          <TestComponent/>
+          <BrowserRouter>
+              <ThemeToggler/>
+              <Header/>
+              <TestComponent/>
+          </BrowserRouter>
       </ThemeContext>
   )
 }

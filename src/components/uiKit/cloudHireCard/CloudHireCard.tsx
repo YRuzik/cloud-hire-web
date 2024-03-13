@@ -8,13 +8,12 @@ type cloudHireCardProps = {
     decoration?: ICardDecoration
     children: ReactNode
     padding?: string
-    margin?: string
 }
 
 const CardWrapper = styled.div<cloudHireCardProps>`
     background-color: ${props => props.decoration?.backgroundColor ?? props.theme.cardColors.cardColor};
     border-radius: ${props => props.decoration?.borderRadius ?? props.theme.dimensions.borderRadius};
-    border-color: ${props => props.decoration?.border?.color ?? props.theme.themeColors.borderColor};
+    border-color: ${props => props.decoration?.border?.color ?? props.theme.themeColors.invertedBorderColor};
     border-style: ${props => props.decoration?.border?.style ?? "solid"};
     border-width: ${props => props.decoration?.border?.size ?? "1px"};
     margin: ${props => props.decoration?.margin ?? "0px"};
