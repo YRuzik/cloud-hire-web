@@ -1,14 +1,13 @@
 import {createContext, FC, ReactNode, useMemo, useState} from "react";
-import {ThemeProvider} from "styled-components";
+import {DefaultTheme, ThemeProvider} from "styled-components";
 import {Light} from "../styles/themes/light.ts";
-import {IStyles} from "../interfaces/IStyles.ts";
 
 type ThemeContextProps = {
     children: ReactNode
 }
 
 type ThemeContextDataType = {
-    setTheme: (v: IStyles) => void
+    setTheme: (v: DefaultTheme) => void
 }
 
 const themeCtxInitialData: ThemeContextDataType = {

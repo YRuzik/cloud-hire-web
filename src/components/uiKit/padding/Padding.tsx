@@ -7,7 +7,7 @@ type paddingProps = {
 }
 
 const PaddingWrapper = styled.div<paddingProps>`
-    padding: ${props => props.customPadding ?? props.theme.padding};
+    padding: ${props => props.customPadding ?? props.theme.dimensions.padding};
 `
 
 const Padding: FC<paddingProps> = ({children, customPadding}) => {

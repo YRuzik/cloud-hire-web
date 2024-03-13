@@ -3,28 +3,28 @@ import {createGlobalStyle} from "styled-components";
 export const GlobalStyles = createGlobalStyle`
     @font-face {
         font-family: "Argentum";
-        src: url("../assets/fonts/ArgentumSans-Black.otf") format("opentype");
+        src: url("src/assets/fonts/ArgentumSans-Black.ttf") format('truetype');
         font-weight: 700;
         font-style: normal;
     }
 
     @font-face {
         font-family: "Argentum";
-        src: url("../assets/fonts/ArgentumSans-Medium.otf") format("opentype");
+        src: url("src/assets/fonts/ArgentumSans-Medium.ttf") format('truetype');
         font-weight: 600;
         font-style: normal;
     }
 
     @font-face {
         font-family: "Argentum";
-        src: url("../assets/fonts/ArgentumSans-Regular.otf") format("opentype");
+        src: url("src/assets/fonts/ArgentumSans-Regular.ttf") format('truetype');
         font-weight: 500;
         font-style: normal;
     }
 
     @font-face {
         font-family: "Argentum";
-        src: url("../assets/fonts/ArgentumSans-Thin.otf") format("opentype");
+        src: url("src/assets/fonts/ArgentumSans-Thin.ttf") format('truetype');
         font-weight: 400;
         font-style: normal;
     }
@@ -116,8 +116,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: ${props => props.theme.backgroundColor};
-        color: ${props => props.theme.textColor};
+        background-color: ${props => props.theme.themeColors.backgroundColor};
+        color: ${props => props.theme.textColors.textColor};
         font-family: "Argentum", sans-serif;
         width: 100%;
         font-weight: 500;

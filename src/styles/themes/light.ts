@@ -1,51 +1,57 @@
-import {IBaseColors, ICommonStyles, IStyles} from "../../interfaces/IStyles.ts";
+import {IBaseColors, IDimensions} from "../../interfaces/IStyles.ts";
+import {DefaultTheme} from "styled-components";
 
 export const BaseColors: IBaseColors = {
-    black: "#1D1D1B",
-    darkBlack: "#1A1A18",
-    blue: "#D2E7FF",
-    gray: "#2E2E2E",
-    green: "#D0E8D4",
-    lightGray: "#747473",
-    orange: "#FFCE9E",
-    purple: "#EED0FF",
-    red: "#FEBED0",
-    white: "#FFFFFF",
-    darkWhite: "#FAFAFA"
+    black: "",
+    gray: "",
+    lightGray: "",
+    softBlack: "",
+    softBlue: "",
+    softGray: "",
+    softGreen: "",
+    softOrange: "",
+    softPurple: "",
+    softRed: "",
+    softWhite: "",
+    white: ""
 }
 
-export const CommonStyles: ICommonStyles = {
-    defaultPadding: "10px",
-    defaultRadius: "7px",
-    margin: "20px",
-    maxRadius: "50px",
-    minMargin: "15px",
-    minPadding: "5px",
-    minRadius: "8px"
+export const BaseDimensions: IDimensions = {
+    borderRadius: "10px",
+    margin: "10px",
+    maxBorderRadius: "50px",
+    minBorderRadius: "5px",
+    minMargin: "2px",
+    minPadding: "2px",
+    padding: "10px"
 }
 
-export const Light: IStyles = {
-    backgroundColor: BaseColors.darkWhite,
-    borderColor: BaseColors.lightGray,
-    borderRadius: CommonStyles.defaultRadius,
-    brandColor: BaseColors.black,
-    brandedTextColor: BaseColors.darkBlack,
-    cardColor: BaseColors.gray,
-    cardSecondaryColor: BaseColors.white,
-    dangerColor: BaseColors.red,
-    invertedBorderColor: BaseColors.lightGray,
-    invertedTextColor: BaseColors.white,
-    margin: CommonStyles.margin,
-    maxBorderRadius: CommonStyles.maxRadius,
-    minBorderRadius: CommonStyles.minRadius,
-    minMargin: CommonStyles.minMargin,
-    minPadding: CommonStyles.minPadding,
-    onBrandColor: BaseColors.white,
-    padding: CommonStyles.defaultPadding,
-    secondaryBackgroundColor: BaseColors.black,
-    shadowColor: "",
-    successColor: BaseColors.green,
-    textColor: BaseColors.darkBlack,
-    textSecondaryColor: BaseColors.lightGray,
-    waitingColor: BaseColors.orange
+export const Light: DefaultTheme = {
+    baseColors: BaseColors,
+    cardColors: {
+        cardColor: "#2E2E2E",
+        cardSecondaryColor: "#FFFFFF"
+    },
+    dimensions: BaseDimensions,
+    inputColors: {
+        backgroundColor: '#FFFFFF',
+        borderColor: '#CECECE'
+    },
+    textColors: {
+        brandedTextColor: "#1D1D1B",
+        invertedTextColor: "#FFFFFF",
+        textColor: "#1D1D1B",
+        textSecondaryColor: "#5E5E5D"
+    },
+    themeColors: {
+        backgroundColor: "#FAFAFA",
+        borderColor: "#515151",
+        brandColor: "#1D1D1B",
+        onBrandColor: "#FAFAFA",
+        dangerColor: "#FEBED0",
+        invertedBorderColor: "#D3D3D3",
+        secondaryBackgroundColor: "#1D1D1B",
+        successColor: "#D0E8D4",
+        waitingColor: "#FFCE9E"
+    },
 }

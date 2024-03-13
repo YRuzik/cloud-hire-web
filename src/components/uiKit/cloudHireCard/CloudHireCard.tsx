@@ -12,9 +12,9 @@ type cloudHireCardProps = {
 }
 
 const CardWrapper = styled.div<cloudHireCardProps>`
-    background-color: ${props => props.decoration?.backgroundColor ?? props.theme.cardColor};
-    border-radius: ${props => props.decoration?.borderRadius ?? props.theme.borderRadius};
-    border-color: ${props => props.decoration?.border?.color ?? props.theme.borderColor};
+    background-color: ${props => props.decoration?.backgroundColor ?? props.theme.cardColors.cardColor};
+    border-radius: ${props => props.decoration?.borderRadius ?? props.theme.dimensions.borderRadius};
+    border-color: ${props => props.decoration?.border?.color ?? props.theme.themeColors.borderColor};
     border-style: ${props => props.decoration?.border?.style ?? "solid"};
     border-width: ${props => props.decoration?.border?.size ?? "1px"};
     margin: ${props => props.decoration?.margin ?? "0px"};

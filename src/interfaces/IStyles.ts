@@ -1,62 +1,26 @@
-export interface IStyles {
-    backgroundColor: string;
-    secondaryBackgroundColor: string;
-
-    brandColor: string;
-    onBrandColor: string;
-
-    textColor: string;
-    brandedTextColor: string;
-    invertedTextColor: string;
-    textSecondaryColor: string;
-
-    cardColor: string;
-    cardSecondaryColor: string;
-
-    borderColor: string;
-    invertedBorderColor: string;
-
-    successColor: string;
-    dangerColor: string;
-    waitingColor: string;
-
-    borderRadius: string;
-    minBorderRadius: string;
-    maxBorderRadius: string;
-
-    shadowColor: string;
-
-    padding: string;
-    minPadding: string;
-
-    margin: string;
-    minMargin: string;
-}
-
 export interface IBaseColors {
-    green: string;
+    softGreen: string;
     white: string;
     black: string;
-    darkBlack: string;
-    red: string;
-    blue: string;
-    purple: string;
-    orange: string;
+    softBlack: string;
+    softRed: string;
+    softBlue: string;
+    softPurple: string;
+    softOrange: string;
     lightGray: string;
+    softGray: string;
     gray: string;
-    darkWhite: string;
+    softWhite: string;
 }
 
-export interface ICommonStyles {
-    defaultRadius: string;
-    minRadius: string;
-    maxRadius: string;
-
-    defaultPadding: string;
-    minPadding: string;
-
-    margin: string;
-    minMargin: string;
+export interface IDimensions {
+    borderRadius: string,
+    margin: string,
+    maxBorderRadius: string,
+    minBorderRadius: string,
+    minMargin: string,
+    minPadding: string,
+    padding: string
 }
 
 export interface ICardDecoration {

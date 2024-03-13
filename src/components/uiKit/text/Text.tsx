@@ -7,7 +7,7 @@ type textProps = {
 }
 
 const TextWrapper = styled.div<textProps>`
-    color: ${props => props.color ?? props.theme.textColor};
+    color: ${props => props.color ?? props.theme.textColors.textColor};
 `
 
 const Text: FC<textProps> = ({children, color}) => {
