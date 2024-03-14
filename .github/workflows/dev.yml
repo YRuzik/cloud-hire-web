@@ -17,6 +17,6 @@ jobs:
           format: markdown
           message: |
             ${{ github.actor }} pushed commit:
-            Branch: ${{ github.ref }}
+            Branch: ${{ github.ref[0] }}
             Repository: [${{ github.repository }}](${{ github.repositoryUrl }})
             Commit message: ${{ github.event.commits[0].message }}
