@@ -1,4 +1,4 @@
-import {IBaseColors, IDimensions} from "../../interfaces/IStyles.ts";
+import {IBaseColors, IDimensions, IStyleConstants} from "../../interfaces/IStyles.ts";
 import {DefaultTheme} from "styled-components";
 
 export const BaseColors: IBaseColors = {
@@ -23,7 +23,11 @@ export const BaseDimensions: IDimensions = {
     minBorderRadius: "5px",
     minMargin: "2px",
     minPadding: "5px",
-    padding: "15px"
+    padding: "20px"
+}
+
+export const StyleConstants: IStyleConstants = {
+    baseTransition: ".1s"
 }
 
 export const Light: DefaultTheme = {

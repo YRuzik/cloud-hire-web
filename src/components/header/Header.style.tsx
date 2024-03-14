@@ -20,6 +20,7 @@ export const HeaderActions = styled.div`
 export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
+    height: 50px;
 `
 
 export const HeaderSpacer = styled.div`
