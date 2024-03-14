@@ -1,10 +1,10 @@
 import {Route, Routes} from "react-router-dom";
-import TestComponent from "../components/uiKit/testComponent/TestComponent.tsx";
+import Landing from "./Landing.tsx";
 
 const Paths = () => {
     return (
         <Routes>
-            <Route path={"/"} element={<TestComponent/>}/>
+            <Route path={"/"} element={<Landing/>}/>
         </Routes>
     )
 }

@@ -53,9 +53,12 @@ export const Light: DefaultTheme = {
         brandColor: "#1D1D1B",
         onBrandColor: "#FAFAFA",
         dangerColor: "#FEBED0",
+        onDangerColor: "#1D1D1B",
         invertedBorderColor: "#D3D3D3",
         secondaryBackgroundColor: "#1D1D1B",
         successColor: "#D0E8D4",
-        waitingColor: "#FFCE9E"
+        onSuccessColor: "#1D1D1B",
+        waitingColor: "#FFCE9E",
+        onWaitingColor: "#1D1D1B"
     },
 }

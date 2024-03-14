@@ -13,8 +13,13 @@ declare module "styled-components" {
             invertedBorderColor: string;
 
             successColor: string;
+            onSuccessColor: string;
+
             dangerColor: string;
+            onDangerColor: string;
+
             waitingColor: string;
+            onWaitingColor: string;
         },
         dimensions: IDimensions,
         inputColors: {

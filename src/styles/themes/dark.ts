@@ -24,9 +24,12 @@ export const Dark: DefaultTheme = {
         brandColor: "#FFFFFF",
         onBrandColor: "#1D1D1B",
         dangerColor: "#FEBED0",
+        onDangerColor: "#1D1D1B",
         invertedBorderColor: "#515151",
         secondaryBackgroundColor: "#FAFAFA",
-        successColor: "#D0E8D4",
-        waitingColor: "#FFCE9E"
+        successColor: "#70dc82",
+        onSuccessColor: "#1D1D1B",
+        waitingColor: "#FFCE9E",
+        onWaitingColor: "#1D1D1B"
     },
 }

@@ -29,6 +29,13 @@ export const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
+    @font-face {
+        font-family: "FiraMono";
+        src: url("src/assets/fonts/FiraMono-Regular.ttf") format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
     * {
         padding: 0;
         margin: 0;

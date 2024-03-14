@@ -31,6 +31,14 @@ export interface ICardDecoration {
     backgroundColor?: string;
 }
 
+export interface IButtonDecoration {
+    backgroundColor: string;
+    color: string;
+    borderRadius: string;
+    padding: string;
+    border: string;
+}
+
 export interface IStyleConstants {
     baseTransition: string
 }
