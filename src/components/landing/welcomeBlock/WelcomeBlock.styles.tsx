@@ -23,3 +23,8 @@ export const WelcomeBlockImage = styled.img`
     height: 100%;
     object-fit: contain;
 `
+
+export const WelcomeBlockOurPartners = styled.div`
+    display: flex;
+    flex-direction: column;
+`
