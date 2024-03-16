@@ -19,8 +19,7 @@ import diorLogo from "../../../assets/img/sponsors/dior.svg"
 import renaultLogo from "../../../assets/img/sponsors/renault.svg"
 import tronLogo from "../../../assets/img/sponsors/tron.svg"
 import underArmorLogo from "../../../assets/img/sponsors/under-armor.svg"
-import InfinityScroll from "../../uiKit/infinityScroll/InfinityScroll.tsx";
-
+import InfinitySVGScroll from "../../uiKit/infinityScroll/InfinitySVGScroll.tsx";
 
 const WelcomeBlock = () => {
     const theme = useContext(ThemeContext)
@@ -49,7 +48,8 @@ const WelcomeBlock = () => {
                             Our trusted partners
                         </Text>
                         <HorizontalDivider margin={"1rem 0"}/>
-                        <InfinityScroll imgArray={sponsorsArray}/>
+                        {/*<InfinityScroll imgArray={sponsorsArray}/>*/}
+                        <InfinitySVGScroll imgArray={sponsorsArray}/>
                     </WelcomeBlockOurPartners>
                 </WelcomeBlockContent>
                 <WelcomeBlockImageWrapper>

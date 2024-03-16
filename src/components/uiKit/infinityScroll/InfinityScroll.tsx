@@ -1,5 +1,7 @@
+/*
 import styled from "styled-components";
 import {FC, useEffect, useRef, useState} from "react";
+import InlineSVG from "react-inlinesvg";
 
 ///TODO found solution for infinity scroll
 type infinityScrollProps = {
@@ -31,9 +33,9 @@ const InfinityScrollAnimator = styled.div<{offset: number}>`
     }
 `
 
-const InfinityScrollImage = styled.img`
-    width: 100%;
-    object-fit: contain;
+const InfinityScrollImage = styled(InlineSVG)`
+    width: 200%;
+    fill: ${props => props.theme.themeColors.brandColor};
 `
 
 const InfinityScroll: FC<infinityScrollProps> = ({imgArray}) => {
@@ -48,12 +50,13 @@ const InfinityScroll: FC<infinityScrollProps> = ({imgArray}) => {
 
     return (
         <InfinityScrollWrapper>
+
             <InfinityScrollAnimator offset={offset} ref={scrollContainerRef}>
-                {imgArray.map((img, i) => <InfinityScrollImage key={i} alt={`${i}`} src={img}/>)}
-                {imgArray.map((img, i) => <InfinityScrollImage key={i} alt={`${i}`} src={img}/>)}
+                {imgArray.map((img, i) => <InfinityScrollImage key={i} src={img}/>)}
+                {imgArray.map((img, i) => <InfinityScrollImage key={i} src={img}/>)}
             </InfinityScrollAnimator>
         </InfinityScrollWrapper>
     )
 }
 
-export default InfinityScroll
+export default InfinityScroll*/
