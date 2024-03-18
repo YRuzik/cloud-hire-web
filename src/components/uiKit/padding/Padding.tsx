@@ -8,6 +8,7 @@ type paddingProps = {
 
 const PaddingWrapper = styled.div<paddingProps>`
     padding: ${props => props.customPadding ?? props.theme.dimensions.padding};
+    height: 100%;
 `
 
 const Padding: FC<paddingProps> = ({children, customPadding}) => {

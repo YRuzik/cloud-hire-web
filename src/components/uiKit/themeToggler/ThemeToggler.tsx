@@ -9,7 +9,7 @@ const ThemeTogglerWrapper = styled.div`
     right: 0;
     top: 0;
     display: flex;
-    z-index: 9999999;
+    z-index: 99999999999;
 `
 
 const ThemeToggler = () => {

@@ -148,8 +148,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h2 {
-        font-size: 1.8rem;
-        font-weight: 700;
+        font-size: 3.5rem;
+        font-weight: 600;
     }
 
     h1 {

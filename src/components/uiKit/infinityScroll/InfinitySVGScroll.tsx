@@ -10,7 +10,7 @@ const TagList = styled.div`
     width: 100%;
     position: relative;
     overflow: hidden;
-    height: 150px;
+    height: 100px;
 `
 
 const Inner = styled.div`
@@ -36,7 +36,20 @@ const Inner = styled.div`
 const Tag = styled(InlineSVG)`
     height: 100%;
     width: 150px;
-    fill: : ${props => props.theme.themeColors.brandColor};
+    fill: ${props => props.theme.themeColors.brandColor};
+`
+
+const Fade = styled.div`
+    position: absolute;
+    background: linear-gradient(
+            90deg,
+            ${props => props.theme.themeColors.backgroundColor},
+            transparent 20%,
+            transparent 80%,
+            ${props => props.theme.themeColors.backgroundColor}
+    );
+    inset: 0;
+    pointer-events: none;
 `
 
 const InfinitySVGScroll: FC<infinityScrollProps> = ({imgArray}) => {
@@ -46,6 +59,7 @@ const InfinitySVGScroll: FC<infinityScrollProps> = ({imgArray}) => {
                 {imgArray.map((img) => <Tag src={img}/>)}
                 {imgArray.map((img) => <Tag src={img}/>)}
             </Inner>
+            <Fade/>
         </TagList>
     )
 }

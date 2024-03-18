@@ -15,15 +15,15 @@ import CloudHireButton from "../../uiKit/cloudHireButton/CloudHireButton.tsx";
 import HorizontalDivider from "../../uiKit/horizontalDivider/HorizontalDivider.tsx";
 
 import appleLogo from "../../../assets/img/sponsors/apple.svg"
-import diorLogo from "../../../assets/img/sponsors/dior.svg"
-import renaultLogo from "../../../assets/img/sponsors/renault.svg"
-import tronLogo from "../../../assets/img/sponsors/tron.svg"
+import obeyLogo from "../../../assets/img/sponsors/obey.svg"
+import instagramLogo from "../../../assets/img/sponsors/instagram.svg"
+import uberLogo from "../../../assets/img/sponsors/uber.svg"
 import underArmorLogo from "../../../assets/img/sponsors/under-armor.svg"
 import InfinitySVGScroll from "../../uiKit/infinityScroll/InfinitySVGScroll.tsx";
 
 const WelcomeBlock = () => {
     const theme = useContext(ThemeContext)
-    const sponsorsArray = [appleLogo, diorLogo, renaultLogo, tronLogo, underArmorLogo]
+    const sponsorsArray = [appleLogo, underArmorLogo, obeyLogo, instagramLogo, uberLogo]
     return (
         <BodyContainer>
             <WelcomeBlockWrapper>
