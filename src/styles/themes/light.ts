@@ -2,15 +2,15 @@ import {IBaseColors, IDimensions, IStyleConstants} from "../../interfaces/IStyle
 import {DefaultTheme} from "styled-components";
 
 export const BaseColors: IBaseColors = {
-    black: "",
-    gray: "",
-    lightGray: "",
+    black: "#1D1D1B",
+    gray: "#2E2E2E",
+    lightGray: "#ECECEC",
     softBlack: "",
-    softBlue: "",
+    softBlue: "#DDF2FF",
     softGray: "",
     softGreen: "",
     softOrange: "",
-    softPurple: "",
+    softPurple: "#F0D8FF",
     softRed: "",
     softWhite: "",
     white: ""
@@ -45,10 +45,12 @@ export const Light: DefaultTheme = {
         brandedTextColor: "#1D1D1B",
         invertedTextColor: "#FFFFFF",
         textColor: "#1D1D1B",
-        textSecondaryColor: "#5E5E5D"
+        textSecondaryColor: "#C4C4C3"
     },
     themeColors: {
         backgroundColor: "#FAFAFA",
+        accent: "#F0D8FF",
+        onAccent: "#1D1D1B",
         borderColor: "#515151",
         brandColor: "#1D1D1B",
         onBrandColor: "#FAFAFA",

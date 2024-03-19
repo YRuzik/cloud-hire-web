@@ -19,7 +19,7 @@ const TextCardWrapper = styled.div`
 const TextCard: FC<textCardProps> = ({text, title, leadingIcon}) => {
     const styles = useContext(ThemeContext)
     return (
-        <CloudHireCard widthPercent={30} height={300} decoration={{border: {color: styles?.themeColors.borderColor}}}>
+        <CloudHireCard widthPercent={35} height={300} decoration={{border: {color: styles?.themeColors.borderColor}}}>
             <TextCardWrapper>
                 {leadingIcon}
                 <Text color={styles?.textColors.invertedTextColor}>

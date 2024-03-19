@@ -20,7 +20,7 @@ const CardWrapper = styled.div<cloudHireCardProps>`
     border-width: ${props => props.decoration?.border?.size ?? "1px"};
     margin: ${props => props.decoration?.margin ?? "0px"};
     height: ${props => props.height}px;
-    width: ${props => props.widthPercent}%;
+    width: ${props => props.widthPercent}rem;
     box-shadow: 0 7px 20px 5px rgba(0,0,0,.1);
 `
 

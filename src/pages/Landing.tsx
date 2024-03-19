@@ -1,6 +1,7 @@
 import WelcomeBlock from "../components/landing/welcomeBlock/WelcomeBlock.tsx";
 import Padding from "../components/uiKit/padding/Padding.tsx";
 import HostingSolutions from "../components/landing/hostingSolutions/HostingSolutions.tsx";
+import News from "../components/landing/news/News.tsx";
 
 const Landing = () => {
     return (
@@ -9,6 +10,7 @@ const Landing = () => {
                 <WelcomeBlock/>
             </Padding>
             <HostingSolutions/>
+            <News/>
         </>
     )
 }

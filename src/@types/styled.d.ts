@@ -8,6 +8,8 @@ declare module "styled-components" {
             secondaryBackgroundColor: string;
             brandColor: string;
             onBrandColor: string;
+            accent: string;
+            onAccent: string;
 
             borderColor: string;
             invertedBorderColor: string;

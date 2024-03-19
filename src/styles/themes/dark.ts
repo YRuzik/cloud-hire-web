@@ -21,6 +21,8 @@ export const Dark: DefaultTheme = {
     themeColors: {
         backgroundColor: "#1D1D1B",
         borderColor: "#D3D3D3",
+        accent: "#F0D8FF",
+        onAccent: "#1D1D1B",
         brandColor: "#FFFFFF",
         onBrandColor: "#1D1D1B",
         dangerColor: "#FEBED0",
